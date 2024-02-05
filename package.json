@@ -1,0 +1,33 @@
+{
+    "name": "optimize-slide",
+    "version": "1.0.0",
+    "main": "dist/how-long-till-lunch.cjs.js",
+    "module": "dist/how-long-till-lunch.esm.js",
+    "browser": "dist/how-long-till-lunch.umd.js",
+    "devDependencies": {
+        "@babel/core": "^7.23.9",
+        "@babel/preset-env": "^7.23.9",
+        "@babel/preset-react": "^7.23.3",
+        "@rollup/plugin-babel": "^6.0.4",
+        "@rollup/plugin-commonjs": "^25.0.7",
+        "@rollup/plugin-node-resolve": "^15.2.3",
+        "@rollup/plugin-typescript": "^11.1.6",
+        "@types/react": "^18.2.53",
+        "react": "^18.2.0",
+        "rollup": "^4.9.6",
+        "rollup-plugin-dts": "^6.1.0",
+        "tslib": "^2.6.2"
+    },
+    "scripts": {
+        "build": "rollup -c --bundleConfigAsCjs",
+        "dev": "rollup -c -w",
+        "test": "node test/test.js",
+        "pretest": "npm run build"
+    },
+    "files": [
+        "dist"
+    ],
+    "dependencies": {
+        "typescript": "^5.3.3"
+    }
+}
