@@ -1,6 +1,7 @@
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import typescript from '@rollup/plugin-typescript';
+import postcss from 'rollup-plugin-postcss'
 import babel from '@rollup/plugin-babel';
 
 export default [
@@ -23,6 +24,7 @@ export default [
             typescript({
                 tsconfig: './tsconfig.json'
             }),
+            postcss(),
             babel({
                 babelHelpers: 'bundled', 
                 extensions: ['.ts', '.tsx'] 
