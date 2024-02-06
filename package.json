@@ -1,6 +1,6 @@
 {
     "name": "optimize-slide",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "main": "dist/main.cjs",
     "module": "dist/main.mjs",
     "typings": "dist/main.d.ts",

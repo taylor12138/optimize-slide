@@ -27,7 +27,7 @@ export default [
             postcss(),
             babel({
                 babelHelpers: 'bundled', 
-                extensions: ['.ts', '.tsx'] 
+                extensions: ['.ts', '.tsx', '.js'] 
             }),
 			resolve(),
 			commonjs(),

@@ -5,6 +5,7 @@
       "target": "ESNext",
       "module": "ESNext",
       "jsx": "preserve",
+      "noImplicitAny": false,
       "moduleResolution": "Node",
       "useDefineForClassFields": true,
       "allowSyntheticDefaultImports": true,

@@ -1,2 +1,2 @@
-import Input from './input';
-export { Input };
+import Slide from './slide';
+export default Slide;
