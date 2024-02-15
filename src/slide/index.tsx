@@ -32,6 +32,9 @@ interface IProps {
     option?: {
         loop: boolean
     };
+    ref: any;
+    onLeft: (params?: any) => void;
+    onRight: (params?: any) => void;
 }
 
 interface ITimer {
@@ -332,6 +335,12 @@ export default class Slide extends PureComponent<IProps> {
         this.translateVal += this.translateCalVal;
 
         myTransLateX(wrapper.current, this.translateVal);
+
+        if(direction === RIGHT) {
+            this.props?.onRight(this.cur);
+        } else {
+            this.props?.onLeft(this.cur);            
+        }
     }
 
     // 重置操作
